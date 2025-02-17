@@ -28,6 +28,13 @@
     gap: 20px;
 }
 
+.link_text {
+    font-family: "Josefin Sans", serif;
+    color: white;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 .icon {
     width: 30px;
     filter: invert(89%) sepia(0%) saturate(6209%) hue-rotate(286deg) brightness(113%) contrast(101%);
@@ -42,11 +49,16 @@
     border-radius: 75px;
     filter: drop-shadow(0 0 0.75rem rgb(172, 9, 41));
     transition: ease-in-out 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .button:focus,
 .button:focus-visible {
-  outline: none;
+    outline: none;
 }
 
 .button:hover {
@@ -135,7 +147,7 @@
 }
 
 @media (max-width: 850px) {
-    .sidebar{
+    .sidebar {
         display: none;
     }
 }

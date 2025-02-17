@@ -29,11 +29,23 @@ export function Sidebar(props) {
         <section className={styles.sidebar}>
             <div className={styles.nav}>
                 <div className={styles.nav_top}>
-                    <Link to="../contact/" className={styles.button} ><img src={chats} className={styles.icon} /></Link>
-                    <Link to="../group/" className={styles.button} ><img src={groups} className={styles.icon} /></Link>
-                    <Link to="../add/" className={styles.button}><img src={add} className={styles.icon} /></Link>
+                    <Link to="../contact/" className={styles.button} >
+                        <img src={chats} className={styles.icon} />
+                        <p className={styles.link_text}>Chats</p>
+                    </Link>
+                    <Link to="../group/" className={styles.button} >
+                        <img src={groups} className={styles.icon} />
+                        <p className={styles.link_text}>Groups</p>
+                    </Link>
+                    <Link to="../add/" className={styles.button}>
+                        <img src={add} className={styles.icon} />
+                        <p className={styles.link_text}>Add</p>
+                    </Link>
                 </div>
-                <button className={styles.button} onClick={() => setSettings(!settings)} ><img src={settingsIcon} className={styles.icon} /></button>
+                <button className={styles.button} onClick={() => setSettings(!settings)} >
+                    <img src={settingsIcon} className={styles.icon} />
+                    <p className={styles.link_text}>Settings</p>
+                </button>
                 <div ref={divRef} className={styles.settings} style={{ display: settings ? "flex" : "none" }}>
                     <div className={styles.settings_content}>
                         <div className={styles.user_img} style={{ backgroundImage: `url(${props.user.profile_pic})`, backgroundSize: "cover" }}></div>

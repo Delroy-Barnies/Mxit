@@ -343,7 +343,7 @@ function App() {
             <main className={styles.main}>
               <Sidebar user={user} />
               <section className={styles.content}>
-                <Header class="" currant={currantGroup} />
+                <Header class="" />
                 <section className={styles.app}>
                   <AddContact />
                 </section>
@@ -356,7 +356,7 @@ function App() {
             <main className={styles.main}>
               <Sidebar user={user} />
               <section className={styles.content}>
-                <Header class="" currant={currantGroup} />
+                <Header class="" />
                 <section className={styles.app}>
                   <AddGroup contacts={contacts} />
                 </section>

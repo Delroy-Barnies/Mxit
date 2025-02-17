@@ -101,7 +101,7 @@
     background-color: whitesmoke;
 }
 
-.link{
+.link {
     display: grid;
     grid-template-columns: 80px 260px;
     padding-right: 10px;
@@ -120,6 +120,11 @@
 @media (max-width: 500px) {
     .groups_list {
         height: 80vh;
+    }
+
+    .contact:hover {
+        border-width: 0px;
+        box-shadow: none;
     }
 }
 

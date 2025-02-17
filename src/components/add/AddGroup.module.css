@@ -89,3 +89,10 @@
     background-color: whitesmoke;
     margin-left: 20px;
 }
+
+@media (max-width: 500px) {
+    .contact:hover {
+        border-width: 0px;
+        box-shadow: none;
+    }
+}

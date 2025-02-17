@@ -40,7 +40,7 @@ export function Footer(props) {
                             <input name="name" className={styles.name} value={props.user.name}></input>
                         </div>
                         <div className={styles.input}>
-                            <label for="email">Email</label>
+                            <label for="email" className={styles.email_label}>Email</label>
                             <input name="email" className={styles.email} value={props.user.email}></input>
                         </div>
                         <Link to="../login" className={styles.logout}>Log out</Link>

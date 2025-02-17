@@ -105,3 +105,33 @@
 
     border-radius: 20px;
 }
+
+@media (max-width: 850px) {
+    .groups_list {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .groups_list {
+        height: 80vh;
+    }
+}
+
+@media(max-width: 450px) {
+    .link {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .link {
+        grid-template-columns: 80px 220px;
+    }
+}
+
+@media (max-width: 350px) {
+    .link {
+        grid-template-columns: 70px 200px;
+    }
+}

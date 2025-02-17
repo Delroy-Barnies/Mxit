@@ -39,6 +39,7 @@
     background: url(../../assets/3844432_magnifier_search_zoom_icon.svg) no-repeat scroll 10px 9px;
     background-size: 20px;
     background-color: #ffffff;
+    color: black;
 
     opacity: 0.6;
 
@@ -92,6 +93,7 @@
 
     padding: 0;
     margin: 0;
+    background-color: transparent;
 }
 
 .contact_status {

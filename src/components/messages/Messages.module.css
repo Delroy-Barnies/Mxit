@@ -39,6 +39,7 @@
     border-color: transparent;
     overflow-x: hidden;
     resize: none;
+    color: black;
 }
 
 .input_message:focus {
@@ -46,9 +47,9 @@
 }
 
 .messages_ {
-    width: 90%;
+    width: 95%;
+    padding-right: 2%;
     height: 80vh;
-    padding-right: 50px;
     margin-top: 10px;
 
     justify-self: flex-end;
@@ -159,19 +160,6 @@
     font-family: "Josefin Sans", serif;
 }
 
-@media(max-width:1230px) {
-    .messages_ {
-        width: 85%;
-    }
-}
-
-@media(max-width:1000px) {
-    .messages_ {
-        width: 80%;
-        padding-right: 30px;
-    }
-}
-
 @media (max-width: 850px) {
     .messages {
         display: none;
@@ -179,7 +167,6 @@
     }
 
     .messages_ {
-        width: 92%;
         height: 68vh;
     }
 }
@@ -187,19 +174,21 @@
 @media (max-width: 450px) {
 
     .messages_ {
-        width: 85%;
         height: 68vh;
     }
 
-    .sent, .recieved{
+    .sent,
+    .recieved {
         width: 250px;
     }
 
-    .sent_text, .recieved_text{
+    .sent_text,
+    .recieved_text {
         font-size: 0.9rem;
     }
 
-    .sent_time, .received_time{
+    .sent_time,
+    .received_time {
         font-size: 0.8rem;
     }
 
@@ -207,8 +196,9 @@
         font-size: 1rem;
     }
 
-    .clip{
+    .clip {
         width: 30px;
+        margin: 10px;
     }
-    
+
 }

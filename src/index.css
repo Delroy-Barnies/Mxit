@@ -70,6 +70,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+button:active {
+  border-style: outset;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

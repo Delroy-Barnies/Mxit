@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sidebar {
+    display: flex;
+
+    background-color: orangered;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav_top {
+    display: flex;
+
+    gap: 20px;
+}
+
+.icon {
+    width: 30px;
+    filter: invert(89%) sepia(0%) saturate(6209%) hue-rotate(286deg) brightness(113%) contrast(101%);
+    position: relative;
+    z-index: 3;
+}
+
+.button {
+    background-color: transparent;
+    padding: 8px;
+    margin: 0;
+    border-radius: 75px;
+    filter: drop-shadow(0 0 0.75rem rgb(172, 9, 41));
+    transition: ease-in-out 0.15s;
+}
+
+.button:focus,
+.button:focus-visible {
+    outline: none;
+}
+
+.button:hover {
+    border-color: transparent;
+    transform: scale(1.1);
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 5;
+}
+
+.settings_content {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.input {
+    font-family: "Josefin Sans", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.user_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+}
+
+.user_img:hover {
+    filter: brightness(0.5)
+}
+
+.name,
+.email {
+    font-family: "Josefin Sans", serif;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    padding: 0;
+
+    width: 200px;
+}
+
+.name {
+    font-family: "Josefin Sans", serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.logout {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.logout:hover {
+    border-color: #ff6464;
+}
+
+.logout:focus,
+.logout:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (min-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .sidebar{
+        justify-content: center;
+    }
+
+    .nav {
+        width: 95%;
+    }
+}
+

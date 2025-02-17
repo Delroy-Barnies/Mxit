@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.login {
+    background-color: whitesmoke;
+    justify-self: center;
+    align-self: center;
+
+    padding: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading,
+.email_label,
+.password_label,
+.remember_label,
+.submit,
+.register,
+.link {
+    font-family: "Josefin Sans", serif;
+}
+
+.heading {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.email {
+    font-size: 1.1rem;
+}
+
+.input {
+    font-family: "Josefin Sans", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.email {
+    font-family: "Josefin Sans", serif;
+    color: rgb(0, 0, 0);
+    padding: 0;
+
+    width: 200px;
+}
+
+.checkbox {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.submit {
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

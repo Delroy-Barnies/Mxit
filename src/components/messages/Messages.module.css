@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.messages {
+    display: grid;
+    grid-template-rows: 1fr 80px;
+    width: 100%;
+    background-color: rgb(221, 219, 219);
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1549998724-03a9e93f22f6");
+    background-size: cover;
+}
+
+.filter {
+    background-color: #0000004f;
+}
+
+.input {
+    background-color: #eeeeee;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.clip {
+    width: 32px;
+    padding: 0;
+    margin-left: 25px;
+    margin-right: 15px;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(0%) saturate(0%) hue-rotate(231deg) brightness(92%) contrast(85%);
+}
+
+.input_message {
+    font-family: "josefin Sans", serif;
+    font-size: 1.1rem;
+    background-color: #eeeeee;
+    width: 80%;
+    height: 50%;
+    margin-top: 25px;
+    border-color: transparent;
+    overflow-x: hidden;
+    resize: none;
+}
+
+.input_message:focus {
+    outline: none;
+}
+
+.messages_ {
+    width: 90%;
+    height: 80vh;
+    padding-right: 50px;
+    margin-top: 10px;
+
+    justify-self: flex-end;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-anchor: none;
+
+    gap: 20px;
+}
+
+.anchor {
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+.sent {
+    width: 300px;
+    background-color: orangered;
+    border-radius: 50px 50px 0px 50px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.new_date {
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.new_date_text {
+    font-family: "Josefin Sans", serif;
+    font-size: 0.7rem;
+    color: rgb(110, 109, 109);
+}
+
+.recieved {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 50px 50px 50px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sent_text {
+    font-family: "Josefin Sans", serif;
+    color: white;
+    padding: 0;
+    margin-left: 35px;
+    margin-right: 10px;
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 0px;
+}
+
+.recieved_text {
+    font-family: "Josefin Sans", serif;
+    color: rgb(63, 62, 62);
+    padding: 0;
+    margin-left: 35px;
+    margin-right: 10px;
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 0px;
+}
+
+.sent_time {
+    font-family: "Josefin Sans", serif;
+    color: rgba(255, 255, 255, 0.811);
+    font-size: 0.8rem;
+    align-self: flex-end;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.received_time {
+    font-family: "Josefin Sans", serif;
+    color: rgba(63, 62, 62, 0.736);
+    font-size: 0.8rem;
+    align-self: flex-end;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.sent_by {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+
+    align-self: flex-start;
+    margin-left: 20px;
+    font-family: "Josefin Sans", serif;
+}
+
+@media(max-width:1230px) {
+    .messages_ {
+        width: 85%;
+    }
+}
+
+@media(max-width:1000px) {
+    .messages_ {
+        width: 80%;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .messages {
+        display: none;
+        position: absolute;
+    }
+
+    .messages_ {
+        width: 92%;
+        height: 68vh;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .messages_ {
+        width: 85%;
+        height: 68vh;
+    }
+
+    .sent, .recieved{
+        width: 250px;
+    }
+
+    .sent_text, .recieved_text{
+        font-size: 0.9rem;
+    }
+
+    .sent_time, .received_time{
+        font-size: 0.8rem;
+    }
+
+    .input_message {
+        font-size: 1rem;
+    }
+
+    .clip{
+        width: 30px;
+    }
+    
+}

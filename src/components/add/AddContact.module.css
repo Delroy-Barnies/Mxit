@@ -1,0 +1,42 @@
+.add_contact {
+    background-color: #eeeeee;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email_label,
+.name_label {
+    font-family: "Josefin Sans", serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(55, 55, 55);
+}
+
+.name,
+.email {
+    font-family: "Josefin Sans", serif;
+    border-width: 0;
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.submit {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contacts {
+    background-color: #eeeeee;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_list {
+    list-style: none;
+    height: 90vh;
+    width: 100%;
+    gap: 17px;
+
+    display: grid;
+    grid-template-rows: 75px;
+    grid-template-columns: 90%;
+    grid-auto-rows: 75px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    overflow-y: scroll;
+}
+
+.contact {
+    border-radius: 20px;
+}
+
+.contact:hover {
+    border-width: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.088), -5px 5px 10px rgba(0, 0, 0, 0.088);
+}
+
+.is_online {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.contact_name_and_message {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact_name {
+    font-family: "Josefin Sans", serif;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.contact_last_message {
+    font-family: "Josefin Sans", serif;
+    color: gray;
+    padding: 0;
+    margin: 0;
+
+    font-size: 0.9rem;
+}
+
+.contact_unread {
+    border-radius: 50px;
+    padding: 8px 13px;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.contact_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: 80px 260px;
+    padding-right: 10px;
+    cursor: pointer;
+    height: 75px;
+
+    border-radius: 20px;
+}
+
+@media (max-width: 850px) {
+    .contacts_list {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts_list {
+        height: 80vh;
+    }
+}
+
+@media(max-width: 450px) {
+    .link {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .link {
+        grid-template-columns: 80px 220px;
+    }
+}
+
+@media (max-width: 350px) {
+    .link {
+        grid-template-columns: 70px 200px;
+    }
+}

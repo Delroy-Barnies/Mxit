@@ -123,6 +123,11 @@
     .contacts_list {
         height: 80vh;
     }
+
+    .contact:hover {
+        border-width: 0px;
+        box-shadow: none;
+    }
 }
 
 @media(max-width: 450px) {

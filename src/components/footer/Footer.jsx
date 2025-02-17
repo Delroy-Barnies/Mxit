@@ -4,12 +4,13 @@ import groups from "../../assets/groups.svg";
 import settingsIcon from "../../assets/settings.svg";
 import add from "../../assets/add.svg";
 import back from "../../assets/back.svg";
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 import { useState, useRef, useEffect } from "react";
 
 export function Footer(props) {
     const [settings, setSettings] = useState(false);
     const divRef = useRef(null);
+    const { id } = useParams();
 
     const handleClickOutside = (event) => {
         if (divRef.current && !divRef.current.contains(event.target)) {
@@ -26,7 +27,7 @@ export function Footer(props) {
 
 
     return (
-        <section className={styles.sidebar}>
+        <section className={styles.sidebar} style={{ display: id ? "none" : "flex" }}>
             <div className={styles.nav}>
                 <Link to="../contact/" className={styles.button} ><img src={chats} className={styles.icon} /></Link>
                 <Link to="../group/" className={styles.button} ><img src={groups} className={styles.icon} /></Link>

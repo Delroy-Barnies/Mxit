@@ -3,6 +3,7 @@
 .messages {
     display: grid;
     grid-template-rows: 1fr 80px;
+    height: 90vh;
     width: 100%;
     background-color: rgb(221, 219, 219);
     overflow: hidden;
@@ -167,14 +168,14 @@
     }
 
     .messages_ {
-        height: 68vh;
+        height: 78vh;
     }
 }
 
 @media (max-width: 450px) {
 
     .messages_ {
-        height: 68vh;
+        height: 78vh;
     }
 
     .sent,

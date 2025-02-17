@@ -63,11 +63,16 @@
     background-color: white;
 }
 
+remember {
+    background-color: white;
+    color: black;
+}
+
 .checkbox {
     display: flex;
     align-self: flex-start;
     align-items: center;
-    background-color: white;
+    color: black;
 }
 
 .submit {

@@ -122,9 +122,14 @@
         height: 80vh;
     }
 
-    .contact:hover {
+    .group:hover {
         border-width: 0px;
         box-shadow: none;
+    }
+
+    .group:active {
+        border-width: 1px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.088), -5px 5px 10px rgba(0, 0, 0, 0.088);
     }
 }
 

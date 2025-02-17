@@ -88,6 +88,32 @@
     gap: 20px;
 }
 
+.back_button {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 150px;
+    cursor: pointer;
+}
+
+.back_button:hover {
+    border-color: transparent;
+}
+
+.back_button:active {
+    border-color: transparent;
+}
+
+.back_button:focus,
+.back_button:focus-visible {
+  outline-color: transparent;
+}
+
+.back_icon {
+    width: 40px;
+}
+
 .input {
     font-family: "Josefin Sans", serif;
     display: flex;

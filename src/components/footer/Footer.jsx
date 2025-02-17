@@ -13,17 +13,8 @@ export function Footer(props) {
     const { id } = useParams();
 
     const handleClickOutside = (event) => {
-        if (divRef.current && !divRef.current.contains(event.target)) {
-            setSettings(false);
-        }
+        setSettings(false);
     };
-
-    useEffect(() => {
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, []);
 
     return (
         <section className={styles.sidebar} style={{ display: id ? "none" : "flex" }}>
@@ -46,6 +37,7 @@ export function Footer(props) {
                 </button>
                 <div ref={divRef} className={styles.settings} style={{ display: settings ? "flex" : "none" }}>
                     <div className={styles.settings_content}>
+                        <button className={styles.back_button} onClick={handleClickOutside}><img src={back} className={styles.back_icon} on /></button>
                         <div className={styles.user_img} style={{ backgroundImage: `url(${props.user.profile_pic})`, backgroundSize: "cover" }}></div>
                         <div className={styles.input}>
 

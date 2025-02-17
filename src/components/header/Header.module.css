@@ -85,6 +85,10 @@
     position: relative;
     top: 35px;
     left: 30px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #eeeeee;
 }
 
 .contact_info {
@@ -168,9 +172,10 @@
     font-weight: bold;
     font-size: 1.2rem;
 
-    border-color: transparent;
+    border-color: white;
     padding: 0;
     margin: 0;
+    border: 0;
 
     width: 160px;
 }

@@ -139,7 +139,8 @@
 
 @media (min-width: 850px) {
     .sidebar {
-        display: none;
+        z-index: -1;
+        background-color: transparent;
     }
 }
 

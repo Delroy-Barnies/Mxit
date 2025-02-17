@@ -50,16 +50,16 @@
     background-color: white;
     color: black;
 
-    border-radius: 8px;
-    border: 1px solid transparent;
+    border-radius: 1px;
+    border: 1px solid black;
     width: 200px;
 }
 
 .password {
     background-color: white;
     color: black;
-    border-radius: 8px;
-    border: 1px solid transparent;
+    border-radius: 1px;
+    border: 1px solid black;
 }
 
 .name {

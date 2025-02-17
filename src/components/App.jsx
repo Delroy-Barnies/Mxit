@@ -356,7 +356,7 @@ function App() {
             <main className={styles.main}>
               <Sidebar user={user} />
               <section className={styles.content}>
-                <Header class="group" currant={currantGroup} />
+                <Header class="" currant={currantGroup} />
                 <section className={styles.app}>
                   <AddGroup contacts={contacts} />
                 </section>

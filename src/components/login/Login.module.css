@@ -33,6 +33,13 @@
 
 .email {
     font-size: 1.1rem;
+    background-color: white;
+    color: black;
+}
+
+.password {
+    background-color: white;
+    color: black;
 }
 
 .input {
@@ -49,16 +56,19 @@
     padding: 0;
 
     width: 200px;
+    background-color: white;
 }
 
 .checkbox {
     display: flex;
     align-self: flex-start;
     align-items: center;
+    background-color: white;
 }
 
 .submit {
     width: 100%;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: black;
 }

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home {
+    width: 500px;
+}
+
+.mxit_icon {
+    width: 400px;
+}
+
+.heading {
+    padding: 0;
+    margin: 0;
+}
+
+.login {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: black;
+}
+
+.login:hover {
+    border-color: #ff6464;
+    color: black;
+}
+
+.login:focus,
+.login:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.login:active {
+    border-style: outset;
+}
+
+@media (max-width: 450px) {
+
+    .mxit_icon {
+        width: 330px;
+    }
+
+    .heading{
+        font-size: 2.8rem;
+    }
+}

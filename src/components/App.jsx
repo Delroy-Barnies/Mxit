@@ -8,6 +8,7 @@ import { Contacts } from './contacts/Contacts'
 import { Footer } from './footer/Footer'
 import { Groups } from './groups/Groups'
 import { Header } from './header/Header'
+import { Home } from './home/Home'
 import { Login } from './login/Login'
 import { Messages } from './messages/Messages'
 import { Register } from './register/Register'
@@ -379,7 +380,9 @@ function App() {
       }
 
     default:
-      return null;
+      return (<main className={styles.home}>
+        <Home />
+      </main>)
   }
 }
 

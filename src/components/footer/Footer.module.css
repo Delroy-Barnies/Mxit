@@ -77,6 +77,7 @@
     top: 0px;
     left: 0px;
     z-index: 5;
+    background-color: whitesmoke;
 }
 
 .settings_content {
@@ -170,6 +171,9 @@
     background-color: whitesmoke;
     background-image: url("https://images.pexels.com/photos/30686338/pexels-photo-30686338/free-photo-of-elegant-cherry-blossom-branches-in-spring-light.jpeg");
     background-size: cover;
+
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
 }
 
 .wallpaper:hover {

@@ -57,6 +57,11 @@ export function Sidebar(props) {
                             <label for="email">Email</label>
                             <input name="email" className={styles.email} value={props.user.email}></input>
                         </div>
+                        <div className={styles.wallpaper_div}>
+                            <p className={styles.wallpaper_text}>Wallpaper</p>
+                            <div className={styles.wallpaper}>
+                            </div>
+                        </div>
                         <Link to="../login" className={styles.logout}>Log out</Link>
                     </div>
                 </div>

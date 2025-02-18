@@ -77,7 +77,7 @@
 }
 
 .group_unread {
-    border-radius: 50px;
+    border-radius: 12px;
     padding: 8px 13px;
     background-color: red;
     color: white;

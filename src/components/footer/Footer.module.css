@@ -82,17 +82,19 @@
     display: flex;
     flex-direction: column;
     width: 200px;
-    margin-top: 5px;
-    margin-left: 50px;
+    margin-left: 40px;
     gap: 20px;
+    position: relative;
+    top: 50px;
 }
 
 .back_button {
     background-color: transparent;
     padding: 0;
     margin: 0;
-    position: relative;
-    right: 120px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
     cursor: pointer;
 }
 
@@ -106,7 +108,7 @@
 
 .back_button:focus,
 .back_button:focus-visible {
-  outline-color: transparent;
+    outline-color: transparent;
 }
 
 .back_icon {
@@ -154,21 +156,21 @@
     font-size: 1.1rem;
 }
 
-.wallpaper_div{
+.wallpaper_div {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.wallpaper_text{
+.wallpaper_text {
     font-family: "Josefin Sans", serif;
     color: rgb(49, 50, 69);
     font-weight: bold;
     margin-bottom: 0;
 }
 
-.wallpaper{
+.wallpaper {
     width: 150px;
     height: 200px;
     border-radius: 10px;

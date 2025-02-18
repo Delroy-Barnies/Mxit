@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import add_user from "../../assets/add_user.svg";
 import mxit_icon from "../../assets/mxit-icon.svg";
 import styles from "./Header.module.css";
@@ -28,7 +28,7 @@ export function Header(props) {
             </div>
             <div className={styles.header_left_mobile} style={{ display: id ? "none" : "flex" }}>
                 <input className={styles.searchbar} type="search" placeholder="Search" />
-                <img className={styles.mxit_icon} src={mxit_icon} />
+                <Link to="../"><img className={styles.mxit_icon} src={mxit_icon} /></Link>
             </div>
             <div className={styles.header_right} style={{ display: id ? "flex" : "none" }}>
                 {props.currant != null ?

@@ -8,10 +8,14 @@ export function Messages(props) {
     const { id } = useParams();
     const [display, setDisplay] = useState("none");
     const scrollRef = useRef(null);
-    useEffect(() => { scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }, []);
+
+    useEffect(() => {
+        scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }, []);
     useEffect(() => {
         setDisplay("grid");
     }, [props.currant]);
+
     return (
         <section className={styles.messages} style={{ display: id ? display : "none" }}>
             <div className={styles.filter}>

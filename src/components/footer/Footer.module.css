@@ -67,7 +67,6 @@
 .settings {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 255, 255);
@@ -83,9 +82,9 @@
 .settings_content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 200px;
     margin-top: 5px;
+    margin-left: 50px;
     gap: 20px;
 }
 
@@ -94,7 +93,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    right: 150px;
+    right: 120px;
     cursor: pointer;
 }
 

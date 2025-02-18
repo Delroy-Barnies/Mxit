@@ -169,6 +169,8 @@
     .messages {
         display: none;
         position: absolute;
+        transition: ease-in-out 1s;
+        transform: translateX(100%) 1s;
     }
 
     .messages_ {

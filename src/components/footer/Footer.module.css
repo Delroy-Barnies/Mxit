@@ -155,6 +155,26 @@
     font-size: 1.3rem;
 }
 
+.wallpaper_text{
+    font-family: "Josefin Sans", serif;
+    color: rgb(49, 50, 69);
+    font-weight: bold;
+}
+
+.wallpaper{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+
+    background-color: whitesmoke;
+    background-image: url("https://images.pexels.com/photos/30686338/pexels-photo-30686338/free-photo-of-elegant-cherry-blossom-branches-in-spring-light.jpeg");
+    background-size: cover;
+}
+
+.wallpaper:hover {
+    filter: brightness(0.5)
+}
+
 .logout {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 8px;
@@ -165,6 +185,7 @@
     font-family: inherit;
     cursor: pointer;
     transition: border-color 0.25s;
+    margin-top: 10px;
 }
 
 .logout:hover {

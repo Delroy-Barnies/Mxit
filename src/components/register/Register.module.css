@@ -14,13 +14,7 @@
     gap: 15px;
 }
 
-.heading,
-.email_label,
-.password_label,
-.remember_label,
-.submit,
-.register,
-.link {
+.heading {
     font-family: "Josefin Sans", serif;
 }
 

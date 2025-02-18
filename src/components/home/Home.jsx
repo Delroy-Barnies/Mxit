@@ -13,7 +13,7 @@ export function Home(props) {
             </div>
             <div className={styles.options}>
                 <Link className={styles.login} to="../login">Login</Link>
-                <p className={styles.register_text}>Dont have an account?<span><Link to="../register"> Register</Link></span></p>
+                <p className={styles.register_text}>Dont have an account?<span><Link to="../register" className={styles.register}> Register</Link></span></p>
             </div>
         </section>
     )

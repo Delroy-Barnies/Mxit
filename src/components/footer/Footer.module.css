@@ -155,12 +155,6 @@
     font-size: 1.3rem;
 }
 
-.wallpaper_div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .wallpaper_text{
     font-family: "Josefin Sans", serif;
     color: rgb(49, 50, 69);

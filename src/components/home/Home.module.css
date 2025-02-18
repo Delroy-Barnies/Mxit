@@ -5,6 +5,7 @@
     background-color: whitesmoke;
     padding-bottom: 50px;
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .head{
@@ -16,7 +17,7 @@
 }
 
 .mxit_icon {
-    width: 400px;
+    width: 300px;
 }
 
 .heading {

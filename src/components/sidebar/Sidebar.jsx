@@ -50,7 +50,7 @@ export function Sidebar(props) {
                     <div className={styles.settings_content}>
                         <div className={styles.user_img} style={{ backgroundImage: `url(${props.user.profile_pic})`, backgroundSize: "cover" }}></div>
                         <div className={styles.input}>
-
+                            <label for="name" className={styles.name_label}>Name</label>
                             <input name="name" className={styles.name} value={props.user.name}></input>
                         </div>
                         <div className={styles.input}>

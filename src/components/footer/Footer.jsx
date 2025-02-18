@@ -40,7 +40,7 @@ export function Footer(props) {
                         <button className={styles.back_button} onClick={handleClickOutside}><img src={back} className={styles.back_icon} on /></button>
                         <div className={styles.user_img} style={{ backgroundImage: `url(${props.user.profile_pic})`, backgroundSize: "cover" }}></div>
                         <div className={styles.input}>
-
+                            <label for="name" className={styles.name_label}>Name</label>
                             <input name="name" className={styles.name} value={props.user.name}></input>
                         </div>
                         <div className={styles.input}>

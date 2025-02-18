@@ -114,17 +114,24 @@
 .name,
 .email {
     font-family: "Josefin Sans", serif;
-    color: rgb(0, 0, 0);
+    color: rgb(49, 50, 69);
     border-style: none;
     padding: 0;
 
     width: 200px;
 }
 
-.name {
+.name_label {
     font-family: "Josefin Sans", serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.wallpaper_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .wallpaper_text{

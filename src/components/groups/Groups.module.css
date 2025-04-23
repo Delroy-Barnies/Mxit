@@ -17,7 +17,7 @@
     grid-auto-rows: 75px;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
 
     overflow-y: scroll;
@@ -30,6 +30,10 @@
 .group:hover {
     border-width: 1px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.088), -5px 5px 10px rgba(0, 0, 0, 0.088);
+}
+
+.group:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.038), -5px 5px 10px rgba(0, 0, 0, 0.088);
 }
 
 .is_online {

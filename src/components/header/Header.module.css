@@ -61,7 +61,8 @@
 
 .searchbar:focus {
     outline: none;
-    width: 270px;
+    width: 262px;
+    padding-right: 8px;
 }
 
 .header_right {
@@ -76,6 +77,7 @@
     grid-template-columns: 80px 1fr;
     align-items: center;
     height: 100%;
+    cursor: pointer;
 }
 
 .is_online {
@@ -122,8 +124,6 @@
     border-radius: 50px;
     background-color: whitesmoke;
     justify-self: center;
-
-    cursor: pointer;
 }
 
 .dropdown {

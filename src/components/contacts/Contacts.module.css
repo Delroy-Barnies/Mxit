@@ -35,6 +35,10 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.088), -5px 5px 10px rgba(0, 0, 0, 0.088);
 }
 
+.contact:active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.038), -5px 5px 10px rgba(0, 0, 0, 0.088);
+}
+
 .is_online {
     width: 10px;
     height: 10px;

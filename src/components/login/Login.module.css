@@ -76,3 +76,15 @@ remember {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: black;
 }
+
+.error{
+    font-family: "Josefin Sans", serif;
+    font-weight: bold;
+    color: rgb(227, 49, 49);
+    margin: 0;
+    margin-top: 10px;
+}
+
+.register{
+    margin: 0;
+}

@@ -31,6 +31,7 @@ const contacts = [{
   history: [
     { date: "2025/01/18" },
     {
+      date: "2025/01/18",
       sent: "Hey",
       time: "04:30 PM"
     },

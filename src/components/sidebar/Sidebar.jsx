@@ -2,6 +2,7 @@ import styles from "./Sidebar.module.css";
 import chats from "../../assets/chats.svg";
 import groups from "../../assets/groups.svg";
 import settingsIcon from "../../assets/settings.svg";
+import camera from "../../assets/camera_icon.svg";
 import add from "../../assets/add.svg";
 import back from "../../assets/back.svg";
 import { Link } from "react-router";
@@ -48,7 +49,8 @@ export function Sidebar(props) {
                 </button>
                 <div ref={divRef} className={styles.settings} style={{ display: settings ? "flex" : "none" }}>
                     <div className={styles.settings_content}>
-                        <div className={styles.user_img} style={{ backgroundImage: `url(${props.user.profile_pic})`, backgroundSize: "cover" }}></div>
+                        <div className={styles.user_img} style={{ backgroundImage: `url(${props.user.profile_pic})`, backgroundSize: "cover" }}>
+                        </div>
                         <div className={styles.input}>
                             <label for="name" className={styles.name_label}>Name</label>
                             <input name="name" className={styles.name} value={props.user.name}></input>

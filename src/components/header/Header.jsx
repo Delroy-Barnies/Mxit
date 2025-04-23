@@ -33,8 +33,8 @@ export function Header(props) {
             <div className={styles.header_right} style={{ display: id ? "flex" : "none" }}>
                 {props.currant != null ?
                     props.class == "contact" ?
-                        <div className={styles.contact}>
-                            <div onClick={() => setDropdown(!dropdown)} className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
+                        <div className={styles.contact} onClick={() => setDropdown(!dropdown)}>
+                            <div className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
                                 <div className={styles.is_online} style={{ backgroundColor: props.currant.is_online ? "green" : "gray" }}></div>
                             </div>
                             <div className={styles.contact_info}>
@@ -50,8 +50,8 @@ export function Header(props) {
                                 </div>
                             </div>
                         </div>
-                        : <div className={styles.contact}>
-                            <div onClick={() => setDropdown(!dropdown)} className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
+                        : <div className={styles.contact} onClick={() => setDropdown(!dropdown)}>
+                            <div className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
                             </div>
                             <div className={styles.contact_info}>
                                 <h3 className={styles.contact_name}>{props.currant.name}</h3>

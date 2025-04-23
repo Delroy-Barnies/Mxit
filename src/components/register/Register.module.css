@@ -6,7 +6,7 @@
     align-self: center;
 
     padding: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .form {
@@ -47,7 +47,14 @@
 
     border-radius: 1px;
     border: 1px solid black;
+}
+
+.name {
     width: 200px;
+}
+
+.email {
+    width: 175px;
 }
 
 .password {
@@ -80,7 +87,17 @@
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: black;
+    margin-top: 5px;
 }
+
+.error{
+    font-family: "Josefin Sans", serif;
+    font-weight: bold;
+    color: rgb(227, 49, 49);
+    margin: 0;
+    margin-top: 10px;
+}
+
 
 @media (max-width:364px) {
     .register {

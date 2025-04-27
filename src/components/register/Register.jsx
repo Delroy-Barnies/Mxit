@@ -14,7 +14,7 @@ export function Register(props) {
     const handleRegister = async (e) => {
         e.preventDefault();
         const payload = {
-            name: e.target.email.name,
+            name: e.target.email.value,
             email: e.target.email.value,
             password: e.target.password.value,
             confirmPassword: e.target.confirmPassword.value
@@ -28,13 +28,14 @@ export function Register(props) {
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                credentials: 'include',
                 body: JSON.stringify(payload)
             });
 
             if (!res.ok) {
                 setHasError(true);
                 setErrorMessage(res.json());
-                console.log(res.json);
+                console.log(res.json());
             } else {
                 const result = await res.json();
                 console.log(result);

@@ -33,12 +33,11 @@ export function Register(props) {
             });
 
             if (!res.ok) {
+                const errorData = await res.json();
                 setHasError(true);
-                setErrorMessage(res.json());
+                setErrorMessage(errorData.message);
                 console.log(res.json());
             } else {
-                const result = await res.json();
-                console.log(result);
                 navigate('../login');
             }
         } catch (error) {

@@ -34,7 +34,7 @@ export function Login(props) {
             } else {
                 const result = await res.json();
                 console.log(result);
-                navigate('../contact');
+                navigate('../contacts');
             }
         } catch (error) {
             console.error('Error sending data:', error);
@@ -52,10 +52,6 @@ export function Login(props) {
                 <div className={styles.input}>
                     <label for="password" className={styles.password_label}>Password</label>
                     <input type="password" name="password" className={styles.password} required />
-                </div>
-                <div className={styles.checkbox}>
-                    <input type="checkbox" name="remember" className={styles.remember} />
-                    <label for="remember" className={styles.remember_label}>Remember me?</label>
                 </div>
                 <button type="submit" className={styles.submit}>submit</button>
                 {hasError ? <p className={styles.error}>Invalid Email or Password!</p> : null}

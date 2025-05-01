@@ -25,6 +25,13 @@ export function Sidebar(props) {
         };
     }, []);
 
+    const handleLogout = async (e) => {
+        await fetch('https://mxit-server.onrender.com/logout', {
+            method: 'POST',
+            credentials: 'include'
+        });
+    }
+
 
     return (
         <section className={styles.sidebar}>
@@ -64,7 +71,7 @@ export function Sidebar(props) {
                             <div className={styles.wallpaper}>
                             </div>
                         </div>
-                        <Link to="../login" className={styles.logout}>Log out</Link>
+                        <Link to="../login" className={styles.logout} onClick={handleLogout}>Log out</Link>
                     </div>
                 </div>
             </div>

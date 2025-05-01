@@ -310,7 +310,7 @@ function App() {
         </main>
       )
 
-    case "contact":
+    case "contacts":
       return (
         <main className={styles.main}>
           <Sidebar user={user} />

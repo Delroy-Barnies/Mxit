@@ -33,13 +33,15 @@ export function Header(props) {
             <div className={styles.header_right} style={{ display: id ? "flex" : "none" }}>
                 {props.currant != null ?
                     props.class == "contact" ?
-                        <div className={styles.contact} onClick={() => setDropdown(!dropdown)}>
-                            <div className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
-                                <div className={styles.is_online} style={{ backgroundColor: props.currant.is_online ? "green" : "gray" }}></div>
-                            </div>
-                            <div className={styles.contact_info}>
-                                <h3 className={styles.contact_name}>{props.currant.name}</h3>
-                                <p className={styles.contact_status}>{props.currant.is_online ? "online now" : "offline"}</p>
+                        <div className={styles.contact}>
+                            <div className={styles.contact_header} onClick={() => setDropdown(!dropdown)}>
+                                <div className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
+                                    <div className={styles.is_online} style={{ backgroundColor: props.currant.is_online ? "green" : "gray" }}></div>
+                                </div>
+                                <div className={styles.contact_info}>
+                                    <h3 className={styles.contact_name}>{props.currant.name}</h3>
+                                    <p className={styles.contact_status}>{props.currant.is_online ? "online now" : "offline"}</p>
+                                </div>
                             </div>
                             <div ref={divRef} className={styles.dropdown} style={{ display: dropdown ? "flex" : "none" }}>
                                 <div className={styles.contact_img_info} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
@@ -50,12 +52,14 @@ export function Header(props) {
                                 </div>
                             </div>
                         </div>
-                        : <div className={styles.contact} onClick={() => setDropdown(!dropdown)}>
-                            <div className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
-                            </div>
-                            <div className={styles.contact_info}>
-                                <h3 className={styles.contact_name}>{props.currant.name}</h3>
-                                <p className={styles.contact_status}>click to see group info</p>
+                        : <div className={styles.contact}>
+                            <div className={styles.contact_header} onClick={() => setDropdown(!dropdown)}>
+                                <div className={styles.contact_img} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>
+                                </div>
+                                <div className={styles.contact_info}>
+                                    <h3 className={styles.contact_name}>{props.currant.name}</h3>
+                                    <p className={styles.contact_status}>click to see group info</p>
+                                </div>
                             </div>
                             <div ref={divRef} className={styles.dropdown} style={{ display: dropdown ? "flex" : "none" }}>
                                 <div className={styles.contact_img_info} style={{ backgroundImage: `url(${props.currant.profile_pic})`, backgroundSize: "cover" }}>

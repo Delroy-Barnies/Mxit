@@ -73,11 +73,14 @@
 }
 
 .contact {
+    cursor: pointer;
+}
+
+.contact_header{
     display: grid;
     grid-template-columns: 80px 1fr;
     align-items: center;
     height: 100%;
-    cursor: pointer;
 }
 
 .is_online {

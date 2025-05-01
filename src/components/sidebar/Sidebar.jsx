@@ -37,11 +37,11 @@ export function Sidebar(props) {
         <section className={styles.sidebar}>
             <div className={styles.nav}>
                 <div className={styles.nav_top}>
-                    <Link to="../contact/" className={styles.button} >
+                    <Link to="../contacts/" className={styles.button} >
                         <img src={chats} className={styles.icon} />
                         <p className={styles.link_text}>Chats</p>
                     </Link>
-                    <Link to="../group/" className={styles.button} >
+                    <Link to="../groups/" className={styles.button} >
                         <img src={groups} className={styles.icon} />
                         <p className={styles.link_text}>Groups</p>
                     </Link>

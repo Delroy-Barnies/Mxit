@@ -6,7 +6,7 @@ export function Groups(props) {
         <section className={styles.groups}>
             <ul className={styles.groups_list}>
                 {props.groups.map((group) => {
-                    return group ? <li className={styles.group} onClick={props.currantGroup}><Link className={styles.link} to={`../group/${group.id}`}>
+                    return group ? <li className={styles.group} onClick={props.currantGroup}><Link className={styles.link} to={`../groups/${group.id}`}>
                         <div className={styles.group_left}>
                             <div className={styles.group_img} style={{ backgroundImage: `url(${group.profile_pic})`, backgroundSize: "cover" }}>
                             </div>

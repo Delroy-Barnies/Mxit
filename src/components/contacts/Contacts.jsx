@@ -7,7 +7,7 @@ export function Contacts(props) {
         <section className={styles.contacts}>
             <ul className={styles.contacts_list}>
                 {props.contacts.map((contact) => {
-                    return contact ? <li className={styles.contact} onClick={props.currantContact}><Link className={styles.link} to={`../contact/${contact.id}`}>
+                    return contact ? <li className={styles.contact} onClick={props.currantContact}><Link className={styles.link} to={`../contacts/${contact.id}`}>
                         <div className={styles.contact_left}>
                             <div className={styles.contact_img} style={{ backgroundImage: `url(${contact.profile_pic})`, backgroundSize: "cover" }}>
                             </div>

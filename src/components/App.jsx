@@ -324,7 +324,7 @@ function App() {
           </section>
         </main>)
 
-    case "group":
+    case "groups":
       return (
         <main className={styles.main}>
           <Sidebar user={user} />
@@ -353,7 +353,7 @@ function App() {
               </section>
             </main>)
 
-        case "group":
+        case "groups":
           return (
             <main className={styles.main}>
               <Sidebar user={user} />

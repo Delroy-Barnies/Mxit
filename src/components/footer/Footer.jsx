@@ -19,11 +19,11 @@ export function Footer(props) {
     return (
         <section className={styles.sidebar} style={{ display: id ? "none" : "flex" }}>
             <div className={styles.nav}>
-                <Link to="../contact/" className={styles.button} >
+                <Link to="../contacts/" className={styles.button} >
                     <img src={chats} className={styles.icon} />
                     <p className={styles.link_text}>Chats</p>
                 </Link>
-                <Link to="../group/" className={styles.button} >
+                <Link to="../groups/" className={styles.button} >
                     <img src={groups} className={styles.icon} />
                     <p className={styles.link_text}>Groups</p>
                 </Link>

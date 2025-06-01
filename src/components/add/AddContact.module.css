@@ -40,5 +40,14 @@
 }
 
 .submit {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: #63636333 0px 2px 8px 0px;
+}
+
+.error{
+    font-family: "Josefin Sans", serif;
+    font-weight: bold;
+    text-align: start;
+    color: rgb(227, 49, 49);
+    margin: 0;
+    margin-top: 10px;
 }

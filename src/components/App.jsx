@@ -284,9 +284,34 @@ function App() {
   const { id } = useParams();
   const [currantContact, setCurrantContact] = useState();
   const [currantGroup, setCurrantGroup] = useState();
+  const [databaseContacts, setDatabaseContacts] = useState([]);
 
   useEffect(() => {
-    contacts.forEach(contact => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch('https://mxit-server.onrender.com/contacts', {
+          method: 'GET',
+          credentials: 'include'
+        });
+
+        if (!res.ok) {
+          console.log(res.status);
+        } else {
+          const result = await res.json();
+          setDatabaseContacts(result);
+          console.log("contacts :" + JSON.stringify(result));
+        }
+      } catch (error) {
+        console.error('Error sending data:', error);
+      }
+    };
+
+    fetchData();
+
+  }, [section]);
+
+  useEffect(() => {
+    databaseContacts.forEach(contact => {
       contact.id === Number(id) ? setCurrantContact(contact) : null;
     });
     groups.forEach(group => {
@@ -317,8 +342,8 @@ function App() {
           <section className={styles.content}>
             <Header class="contact" currant={currantContact} />
             <section className={styles.app}>
-              <Contacts contacts={contacts} />
-              <Messages currant={currantContact} />
+              <Contacts contacts={databaseContacts} />
+              <Messages current={currantContact} />
             </section>
             <Footer user={user} />
           </section>

@@ -26,10 +26,14 @@ export function Sidebar(props) {
     }, []);
 
     const handleLogout = async (e) => {
-        await fetch('https://mxit-server.onrender.com/logout', {
-            method: 'POST',
-            credentials: 'include'
-        });
+        try {
+            await fetch('https://mxit-server.onrender.com/logout', {
+                method: 'POST',
+                credentials: 'include'
+            });
+        } catch (error) {
+            console.error('Error sending data:', error);
+        }
     }
 
 

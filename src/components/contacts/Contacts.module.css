@@ -105,6 +105,7 @@
     height: 50px;
     border-radius: 50px;
     background-color: whitesmoke;
+    box-shadow: rgba(99, 99, 99, 0.037) 0px 2px 8px 0px;
 }
 
 .link {

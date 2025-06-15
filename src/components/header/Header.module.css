@@ -127,6 +127,7 @@
     border-radius: 50px;
     background-color: whitesmoke;
     justify-self: center;
+    box-shadow: rgba(99, 99, 99, 0.037) 0px 2px 8px 0px;
 }
 
 .dropdown {
@@ -152,6 +153,7 @@
     border-radius: 50px;
     background-color: whitesmoke;
     justify-self: center;
+    box-shadow: rgba(99, 99, 99, 0.037) 0px 2px 8px 0px;
 }
 
 .icon {

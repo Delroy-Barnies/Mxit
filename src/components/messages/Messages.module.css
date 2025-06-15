@@ -2,7 +2,7 @@
 
 .messages {
     display: grid;
-    grid-template-rows: 1fr 80px;
+    grid-template-rows: 87% 13%;
     height: 90vh;
     width: 100%;
     background-color: rgb(221, 219, 219);
@@ -20,10 +20,10 @@
     border-width: 0;
     display: flex;
     align-items: center;
-    position: fixed;
-    bottom: 0;
+    justify-content: space-between;
+    margin-bottom: 50px;
     width: 100%;
-    height: 80px;
+    height: 100%;
 }
 
 .clip {
@@ -38,7 +38,11 @@
     font-family: "josefin Sans", serif;
     font-size: 1.1rem;
     background-color: #eeeeee;
-    width: 80%;
+    flex: 1;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 8px;
     height: 50%;
     margin-top: 25px;
     border-color: transparent;
@@ -49,6 +53,37 @@
 
 .input_message:focus {
     outline: none;
+}
+
+.send_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: orangered;
+    border-width: 0;
+    transition: ease-in 0.02s;
+    box-shadow: rgba(99, 99, 99, 0.508) 0px 2px 8px 0px;
+}
+
+.send_button:focus,
+.send_button:focus-visible {
+  outline: none;
+}
+
+.send_button:active {
+  border-style: outset;
+  box-shadow: none;
+}
+
+.send {
+    width: 25px;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .messages_ {

@@ -2,6 +2,7 @@ import styles from "./Messages.module.css";
 import clip from "../../assets/clip.svg";
 import { useRef, useEffect, useState } from "react";
 import { useParams } from "react-router";
+import send from "../../assets/send.svg"
 
 export function Messages(props) {
 
@@ -82,7 +83,8 @@ export function Messages(props) {
             </div>
             <form className={styles.input} onSubmit={handleSubmitMessage}>
                 <img src={clip} className={styles.clip} />
-                <textarea className={styles.input_message} name="message" maxLength="500" placeholder="Type your message and press enter..."></textarea>
+                <textarea className={styles.input_message} name="message" maxLength="500" placeholder="Enter your message..."></textarea>
+                <button type="submit" className={styles.send_button}><img src={send} className={styles.send} /></button>
             </form>
         </section>
     )
